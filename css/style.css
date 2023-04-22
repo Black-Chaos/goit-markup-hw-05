@@ -12,6 +12,7 @@
   --dark-bg-title-color: #ffffff;
   --dark-bg-element-color: #F4F4FD;
   --default-color-clients: #8E8F99;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   /* --outline: 2px solid red; */
 }
@@ -162,6 +163,7 @@ img {
 :where(.site-nav, .contacts) .link {
   display: inline-block;
   padding: 24px 0;
+  transition: color var(--transition);
 }
 
 :where(.site-nav, .contacts) .link:is(:hover, :focus) {
@@ -209,7 +211,7 @@ img {
   background-color: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
+  transition: background-color var(--transition);
 }
 
 .hero .btn:is(:hover, :focus) {
@@ -306,6 +308,7 @@ img {
   color: var(--dark-bg-element-color);
   background-color: var(--brand-color);
   border-radius: 50%;
+  transition: background-color var(--transition)
 }
 
 .social-link .link:is(:hover, :focus) {
@@ -344,6 +347,7 @@ img {
   color: var(--default-color-clients);
   border: 1px solid var(--default-color-clients);
   border-radius: 4px;
+  transition: color var(--transition), border-color var(--transition)
 }
 
 .client .icon {
@@ -421,6 +425,9 @@ img {
   background-color: var(--light-bg);
   border: 1px solid var(--accent-color);
   border-radius: 4px;
+  transition: color var(--transition),
+  background-color var(--transition),
+  box-shadow var(--transition);
 }
 
 .filter .btn:is(:hover, :focus) {
@@ -428,7 +435,6 @@ img {
   background-color: var(--active-element-color);
   border-color: transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
 .work-card {
@@ -439,6 +445,7 @@ img {
 
 .card .link {
   display: block;
+  transition: box-shadow var(--transition);
 }
 
 .card .link:is(:hover, :focus) {
