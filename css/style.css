@@ -149,6 +149,7 @@ img {
 
 .current {
   position: relative;
+  color: var(--active-element-color);
 }
 
 .current::after {
@@ -454,7 +455,7 @@ img {
   background: #E7E9FC;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  transition: var(--transition) color, var(--transition) backgraund-color;
+  transition: var(--transition) color, var(--transition) background-color;
 }
 
 .close-btn .close {
@@ -465,6 +466,12 @@ img {
   color: var(--dark-bg-title-color);
   background-color: var(--active-element-color);
 }
+
+/*
+  ******************************
+   —————— PORTFOLIO PAGE ———————
+  ******************************
+*/
 
 /*
   ******************************
@@ -490,7 +497,7 @@ img {
   border-radius: 4px;
   transition: color var(--transition),
     background-color var(--transition),
-    box-shadow var(--transition);
+    box-shadow var(--transition), border var(--transition);
 }
 
 .filter .btn:is(:hover, :focus) {
